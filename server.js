@@ -35,6 +35,14 @@ mongoose
     console.log("Successfully connected to Database");
   });
 
+// Sending static files requests to the client
+app.use(express.static(path.join(__dirname, "client", "build")));
+
+//  Sending the main index.html file back to the client
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 const server = app.listen(port, () => {
   console.log(`listening to port ${port}`);
 });
