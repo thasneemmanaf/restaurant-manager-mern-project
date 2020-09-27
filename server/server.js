@@ -12,12 +12,12 @@ process.on("uncaughtException", (err) => {
 const app = require("./app");
 
 const dbNames = {
-  production: "sceats",
+  production: "dev-sceats",
   test: "test-sceats",
   development: "dev-sceats",
 };
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 const mongoConnectionString = process.env.DATABASE.replace(
   "<DB>",

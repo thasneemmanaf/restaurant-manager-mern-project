@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
-    "client": "cd../ && cd client && npm start",
-    "dev": "concurrently \" nodemon server.js\" \"npm run client\""
+    "dev": "nodemon server.js"
   },
   "author": "thasneem manaf",
   "license": "MIT",
