@@ -1,0 +1,18 @@
+{
+  "name": "restaurant-manager-mern-app",
+  "version": "1.0.0",
+  "description": "This is an app to manage a restaurant such as add menu,update menu etc...",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/thasneemmanaf/restaurant-manager-mern-project.git)"
+  },
+  "author": "Thasneem Manaf",
+  "license": "MIT"
+}
